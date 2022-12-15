@@ -1,12 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import { useSelector } from "react-redux";
+
 function Header() {
+  const items =useSelector()
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            Redux Store
           </a>
           <button
             className="navbar-toggler"
@@ -32,7 +35,7 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/">
                   CART ITEMS : 0
                 </a>
               </li>
